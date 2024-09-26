@@ -17,6 +17,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - cython
@@ -27,7 +28,6 @@ requirements:
     - setuptools_scm
   run:
     - python
-    - numpy
     - packaging
 
 test:
@@ -36,6 +36,7 @@ test:
   requires:
     - numpy
     - setuptools
+    - packaging
 
 about:
   home: https://pypi.org/project/bcolz-zipline/
