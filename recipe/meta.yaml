@@ -36,7 +36,6 @@ test:
   requires:
     - numpy
     - setuptools
-    - packaging
 
 about:
   home: https://pypi.org/project/bcolz-zipline/
